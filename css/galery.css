@@ -1,0 +1,74 @@
+/*  import google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+
+.title {
+	font-family: 'Ubuntu', sans-serif;
+}
+
+
+.btn {
+	text-align: center;
+}
+
+.button {
+    background: crimson;
+    color: #fff;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 5px;
+    font-weight: 400;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+    justify-content: center;
+}
+.teams {
+	display: block;
+}
+
+h1 {
+	color: #fff;
+	text-align: center;
+}
+
+.grid-item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	background-color: #000;
+	border-radius: 4px;
+	transition: transform 0.3s ease-in-out;
+
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.grid-item:hover {
+	filter: opacity(0.9);
+	transform: scale(1.04);
+}
+
+.grid-container {
+	display: grid;
+	gap: 20px;
+	padding: 20px;
+	grid-auto-flow: dense;
+}
+
+.grid-item img {
+	width: 80%;
+	height: 80%;
+}
+
+@media (min-width: 600px){
+ .wide {
+	grid-column: span 2;
+ }
+
+ .tall {
+	grid-row: span 2;
+ }
+}
